@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WeatherTest</string>
+    <string name="search_title">Search</string>
+    <string name="forecast_title">Forecast</string>
+    <string name="recent_title">Recent Places</string>
+    <string name="search_location">Search Location</string>
+    <string name="weather_search_title">How\'s the weather looking?</string>
+    <string name="search_button_title">Search</string>
+    <string name="the_forecast_in">The forecast in</string>
+    <string name="over_the_next">over the next 7 days.</string>
+    <string name="change_my_address">Change my address</string>
+    <string name="the_high_will_be">The high will be</string>
+    <string name="the_low_will_be">the low will be</string>
+    <string name="recent_places">Recent places</string>
+    <string name="recent_location_title">Recent locations</string>
+    <string name="return_to_search">Return to search</string>
+</resources>
