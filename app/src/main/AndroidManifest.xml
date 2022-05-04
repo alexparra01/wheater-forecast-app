@@ -13,10 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeatherTest">
 
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="${API_KEY}"/>
-
         <activity
             android:name=".presentation.MainActivity"
             android:exported="true"
