@@ -30,10 +30,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         if (!Places.isInitialized()){
-            Places.initialize(this, BuildConfig.apiKey)
+            Places.initialize(this, BuildConfig.API_KEY)
         }
         AppCenter.start(
-            application, BuildConfig.appCenterKey,
+            application, BuildConfig.API_APPCENTER_KEY,
             Analytics::class.java, Crashes::class.java
         )
         viewModel.handleStartNavigation({
