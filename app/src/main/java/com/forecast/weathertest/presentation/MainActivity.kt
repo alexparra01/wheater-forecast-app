@@ -12,6 +12,14 @@ import com.forecast.weathertest.presentation.navigation.AppNavigation
 import com.forecast.weathertest.presentation.theme.WeatherTestTheme
 import com.google.android.libraries.places.api.Places
 import dagger.hilt.android.AndroidEntryPoint
+import com.microsoft.appcenter.crashes.Crashes
+
+import com.microsoft.appcenter.analytics.Analytics
+
+import com.microsoft.appcenter.AppCenter
+
+
+
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -24,6 +32,10 @@ class MainActivity : ComponentActivity() {
         if (!Places.isInitialized()){
             Places.initialize(this, BuildConfig.apiKey)
         }
+        AppCenter.start(
+            application, BuildConfig.appCenterKey,
+            Analytics::class.java, Crashes::class.java
+        )
         viewModel.handleStartNavigation({
             initialScreen = WeatherAppNavigation.SearchView.route
         }){
